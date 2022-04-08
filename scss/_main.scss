@@ -1,0 +1,457 @@
+body {
+    font-family: $font-family-ch;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.topbar {
+    background-image: url(../images/pic1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 800px;
+    padding-top: 30px;
+
+    @include mobile {
+        height: 600px;
+    }
+}
+
+.navbarlogo {
+    display: flex;
+    justify-content: center;
+
+    a {
+        background-image: url(../images/logo.png);
+        width: 190px;
+        height: 36px;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+#nav-control {
+    opacity: 0;
+
+    &:checked~.navbar {
+        left: 0;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    font-family: $font-family-ch;
+    font-size: $font-m;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        background-color: #686868e1;
+        position: absolute;
+        top: 0px;
+        left: -100%;
+        width: 80%;
+        height: 100%;
+        text-align: center;
+        transition: .5s;
+    }
+
+    a {
+        text-decoration: none;
+        color: $white-color;
+
+        &:hover {
+            color: $brand-color;
+        }
+    }
+}
+
+.navitem {
+    padding: 20px;
+
+    img {
+        display: none;
+    }
+
+    @include mobile {
+        img {
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.nav-btn {
+    display: none;
+
+    @include mobile {
+        display: block;
+        position: absolute;
+        top: 36px;
+        right: 20px;
+        color: $white-color;
+        font-size: $font-l;
+    }
+}
+
+.slogn {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+
+    @include mobile {
+        top: 20%;
+        right: 7%;
+    }
+}
+
+.slogn h2 {
+    font-size: 100px;
+    font-family: $font-family-eg;
+    font-weight: bold;
+    color: $white-color;
+    text-align: right;
+
+    @include mobile {
+        font-size: $font-l;
+    }
+}
+
+.slogn p {
+    font-size: 50px;
+    font-family: $font-family-eg;
+    font-weight: bold;
+    color: $white-color;
+    text-align: right;
+    margin-top: 15px;
+
+    @include mobile {
+        font-size: $font-s;
+        margin-top: 5px;
+    }
+}
+
+.container_about {
+    background-color: $brand-color;
+    padding: 30px 0;
+}
+
+.title-ch {
+    font-size: $font-title;
+    text-align: center;
+    color: $white-color;
+
+    @include mobile {
+        font-size: $font-xl;
+    }
+}
+
+.title-eg {
+    font-family: $font-family-title-eg;
+    font-size: $font-xl;
+    text-align: center;
+    color: $white-color;
+    padding: 10px 0 30px 0;
+
+    @include mobile {
+        font-size: $font-m;
+    }
+}
+
+.title-dark-ch {
+    font-size: $font-title;
+    text-align: center;
+    color: $brand-color;
+
+    @include mobile {
+        font-size: $font-xl;
+    }
+}
+
+.title-dark-eg {
+    font-family: $font-family-title-eg;
+    font-size: $font-xl;
+    text-align: center;
+    color: $brand-color;
+    padding: 10px 0 30px 0;
+
+    @include mobile {
+        font-size: $font-m;
+    }
+}
+
+.about {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.photobox {
+    width: 100%;
+    padding-right: 10px;
+
+    @include mobile {
+        padding-right: 0;
+    }
+}
+
+.textbox {
+    background-color: $white-color;
+    opacity: 70%;
+
+    @include mobile {
+        background-color: $brand-color;
+        opacity: 100%;
+    }
+}
+
+.name {
+    color: $black-color;
+    font-size: $font-l;
+    padding: 10px;
+
+    @include mobile {
+        text-align: center;
+        color: $white-color;
+    }
+}
+
+.dark-name {
+    color: $brand-color;
+    font-size: $font-l;
+    padding: 10px;
+
+    @include mobile {
+        text-align: center;
+    }
+}
+
+.date {
+    color: $blue-color;
+    font-size: $font-s;
+    padding: 5px 10px;
+
+    @include mobile {
+        text-align: center;
+        color: $white-color;
+    }
+
+    a {
+        text-decoration: none;
+        color: $blue-color;
+
+        @include mobile {
+            color: $white-color;
+        }
+    }
+}
+
+.dark-date {
+    color: $brand-color;
+    font-size: $font-s;
+    padding: 5px 10px;
+
+    @include mobile {
+        text-align: center;
+    }
+}
+
+.text {
+    color: $black-color;
+    font-size: $font-s;
+    line-height: 30px;
+    padding: 0 10px 10px 10px;
+}
+
+.intro {
+    color: $black-color;
+    font-size: $font-s;
+    text-indent: 2em;
+    line-height: 30px;
+    padding: 0 10px 10px 10px;
+
+    @include mobile {
+        color: $white-color;
+        padding-top: 20px;
+    }
+}
+
+.banner2 {
+    background-image: url(../images/pic2.jpg);
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.back-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: $font-xl;
+    color: $orange-color;
+    cursor: pointer;
+    transform: translateY(0%);
+    transition: 0.5s;
+}
+
+.back-top:hover {
+    opacity: 0.5;
+}
+
+.back-top.hide {
+    transform: translateY(200%);
+}
+
+.container_job {
+    background-color: $white-color;
+    padding: 30px 0;
+
+    @include mobile {
+        padding-bottom: 0;
+        ;
+    }
+}
+
+.jobcard {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.cardbody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10px;
+
+    @include mobile {
+        padding-left: 0px;
+    }
+}
+
+.jobphoto {
+    background-color: $brand-color;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.jobtext {
+    box-shadow: 0px 0px 10px grey;
+}
+
+.essential {
+    color: $lightbrand-color;
+    padding: 0 0 10px 10px;
+    line-height: 22px;
+}
+
+.container_skill {
+    background-color: $brand-color;
+    padding-top: 30px;
+}
+
+.skill {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    padding-bottom: 30px;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.skillbox {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    @include mobile {
+        padding: 20px 0;
+    }
+}
+
+.skillphoto {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+
+    @include mobile {
+        width: 60%;
+        margin: auto;
+        padding-right: 0;
+    }
+}
+
+.g-container {
+    width: 800px;
+    height: 25px;
+    border-radius: 25px;
+    background: $white-color;
+    color: $white-color;
+
+    @include mobile {
+        width: 300px;
+    }
+
+    @include pad {
+        width: 300px;
+    }
+}
+
+.g-progress {
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: linear-gradient(to right, #E6A117 0%, #F5D9A2 100%);
+}
+
+.skill-title-eg {
+    font-family: $font-family-eg;
+    font-size: $font-m;
+    color: $white-color;
+    width: 200px;
+    padding: 0 20px;
+
+    @include mobile {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+.g-progressbox {
+    display: flex;
+    padding-bottom: 20px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+    }
+}
+
+.footer {
+    background-color: $brand-color;
+}
