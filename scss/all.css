@@ -423,12 +423,14 @@ img {
   bottom: 30px;
   right: 30px;
   font-size: 40px;
-  color: #EBB445;
-  cursor: pointer;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.back-top a {
+  color: #EBB445;
 }
 
 .back-top:hover {

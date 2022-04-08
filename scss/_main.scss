@@ -306,10 +306,11 @@ img {
     bottom: 30px;
     right: 30px;
     font-size: $font-xl;
-    color: $orange-color;
-    cursor: pointer;
     transform: translateY(0%);
     transition: 0.5s;
+    a {
+        color: $orange-color;
+    }
 }
 
 .back-top:hover {
