@@ -453,6 +453,22 @@ img {
     }
 }
 
+.portbox {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.portphoto {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 5px 0;
+
+}
+
 .footer {
     background-color: $brand-color;
 }
