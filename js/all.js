@@ -10,3 +10,6 @@ $(document).ready(function () {
       }
     });
 });
+<script>
+        new WOW().init();
+</script>
