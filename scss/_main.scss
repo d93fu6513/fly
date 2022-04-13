@@ -283,7 +283,6 @@ img {
 .intro {
     color: $black-color;
     font-size: $font-s;
-    text-indent: 2em;
     line-height: 30px;
     padding: 0 10px 10px 10px;
 
@@ -308,6 +307,7 @@ img {
     font-size: $font-xl;
     transform: translateY(0%);
     transition: 0.5s;
+
     a {
         color: $orange-color;
     }
