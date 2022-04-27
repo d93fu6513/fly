@@ -141,12 +141,19 @@ img {
 }
 
 .navbar a {
+  display: block;
   text-decoration: none;
   color: #ffffff;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .navbar a:hover {
   color: #406D80;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .navitem {
